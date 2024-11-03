@@ -86,14 +86,6 @@ const Sensory = () => {
             </p>
           </div>
         </Box>
-
-        {/* Contact Section */}
-        <div className="bg-gray-50 p-6 text-center">
-          <p className="text-lg font-semibold text-blue-600 mb-2">
-            Zapraszamy do kontaktu i współpracy.
-          </p>
-          <p className="text-xl font-bold text-gray-800">Psycholog Rafał Sawicki</p>
-        </div>
       </div>
     </div>
   );
