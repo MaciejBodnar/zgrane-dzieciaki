@@ -11,7 +11,7 @@ import korektywa from '../assets/Korektywa.png';
 const NextArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute right-6 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl"
+    className="absolute right-1 sm:right-6 top-1/2 p-1 -translate-y-1/2 z-10 bg-white/90 hover:bg-white sm:p-2 xl:p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl"
   >
     <FaArrowRight className="text-blue-600 text-xl" />
   </button>
@@ -20,7 +20,7 @@ const NextArrow = ({ onClick }) => (
 const PrevArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute left-6 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl"
+    className="absolute left-1 sm:left-6 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white p-1 sm:p-2 xl:p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl"
   >
     <FaArrowLeft className="text-blue-600 text-xl" />
   </button>

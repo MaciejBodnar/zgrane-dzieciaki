@@ -75,14 +75,14 @@ const Navbar = () => {
             )}
           </button>
 
-          <div className="hidden md:flex space-x-8 items-center">
+          <div className="hidden md:flex md:gap-4 lg:space-x-8 items-center">
             <Link
               to="/"
               className={`text-gray-600 hover:text-gray-900 transition-all duration-300 ${
                 isScrolled ? 'text-sm' : 'text-base'
               }`}
             >
-              Home
+              Strona główna
             </Link>
 
             <div className="relative group">
@@ -92,7 +92,7 @@ const Navbar = () => {
                   isScrolled ? 'text-sm' : 'text-base'
                 }`}
               >
-                About
+                O nas
                 <FaChevronDown
                   className={`transform transition-transform duration-200 group-hover:rotate-180`}
                   size={12}
@@ -106,7 +106,7 @@ const Navbar = () => {
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaChild className="text-blue-500" />
-                    <span>Standards</span>
+                    <span>Standardy ochrony małoletnich</span>
                   </Link>
                 </div>
               </div>
@@ -119,7 +119,7 @@ const Navbar = () => {
                   isScrolled ? 'text-sm' : 'text-base'
                 }`}
               >
-                Offer
+                Oferta
                 <FaChevronDown
                   className={`transform transition-transform duration-200 group-hover:rotate-180`}
                   size={12}
@@ -133,21 +133,21 @@ const Navbar = () => {
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaGraduationCap className="text-blue-500" />
-                    <span>Study</span>
+                    <span>Integracja sensoryczna</span>
                   </Link>
                   <Link
                     to="/offer/sensory"
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaFlask className="text-blue-500" />
-                    <span>Sensory tests</span>
+                    <span className="w-fit">Trening umiejętności społecznych</span>
                   </Link>
                   <Link
                     to="/offer/cranial-therapy"
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaHandHoldingMedical className="text-blue-500" />
-                    <span>Cranial Therapy</span>
+                    <span>Terapia kręgosłupa</span>
                   </Link>
                   <Link
                     to="/offer/neuroflow"
@@ -161,41 +161,41 @@ const Navbar = () => {
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaWalking className="text-blue-500" />
-                    <span>Corrective</span>
+                    <span>Korektywa</span>
                   </Link>
                   <Link
                     to="/offer/hand-therapy"
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaHandPaper className="text-blue-500" />
-                    <span>Hand Therapy</span>
+                    <span>Terapia dłoni</span>
                   </Link>
                   <Link
                     to="/offer/speech-therapy"
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaComments className="text-blue-500" />
-                    <span>Speech Therapy</span>
+                    <span>Terapia mowy</span>
                   </Link>
                   <Link
                     to="/offer/pricing"
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaMoneyBill className="text-blue-500" />
-                    <span>Pricing</span>
+                    <span>Cennik</span>
                   </Link>
                 </div>
               </div>
             </div>
 
-            <div className="relative group">
+            {/* <div className="relative group">
               <Link
                 to="/gallery"
                 className={`text-gray-600 hover:text-gray-900 transition-all duration-300 flex items-center gap-1 ${
                   isScrolled ? 'text-sm' : 'text-base'
                 }`}
               >
-                Gallery
+                Galeria
                 <FaChevronDown
                   className={`transform transition-transform duration-200 group-hover:rotate-180`}
                   size={12}
@@ -209,25 +209,25 @@ const Navbar = () => {
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaBuilding className="text-blue-500" />
-                    <span>Office</span>
+                    <span>Biuro</span>
                   </Link>
                   <Link
                     to="/gallery/classes"
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaChalkboardTeacher className="text-blue-500" />
-                    <span>Classes</span>
+                    <span>Zajęcia</span>
                   </Link>
                   <Link
                     to="/gallery/therapy"
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaHandHoldingHeart className="text-blue-500" />
-                    <span>Therapy</span>
+                    <span>Terapia</span>
                   </Link>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <Link
               to="/contact"
@@ -235,7 +235,7 @@ const Navbar = () => {
                 isScrolled ? 'text-sm' : 'text-base'
               }`}
             >
-              Contact
+              Kontakt
             </Link>
             <Link
               to="/rodo"
@@ -264,17 +264,18 @@ const Navbar = () => {
 
             {/* About Mobile Dropdown */}
             <div>
-              <button
-                onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}
-                className="w-full text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200"
-              >
+              <div className="w-full text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200">
                 <FaInfoCircle className="text-blue-500" />
-                <span>About</span>
-                <FaChevronDown
-                  className={`transform transition-transform duration-200 ${isMobileAboutOpen ? 'rotate-180' : ''}`}
-                  size={12}
-                />
-              </button>
+                <a href="/about">
+                  <span>About</span>
+                </a>
+                <button onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}>
+                  <FaChevronDown
+                    className={`transform transition-transform duration-200 ${isMobileAboutOpen ? 'rotate-180' : ''}`}
+                    size={12}
+                  />
+                </button>
+              </div>
 
               {isMobileAboutOpen && (
                 <>
@@ -284,7 +285,7 @@ const Navbar = () => {
                     onClick={toggleMenu}
                   >
                     <FaChild className="text-blue-500" />
-                    <span>Standards</span>
+                    <span>Standardy ochrony małoletnich</span>
                   </Link>
                 </>
               )}
@@ -292,17 +293,19 @@ const Navbar = () => {
 
             {/* Offer Mobile Dropdown */}
             <div>
-              <button
-                onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}
+              <div
                 className="w-full text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200"
               >
                 <FaList className="text-blue-500" />
-                <span>Offer</span>
+                <a href='/offer'>
+                <span>Offer</span></a>
+                <button                 onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}
+                >
                 <FaChevronDown
                   className={`transform transition-transform duration-200 ${isMobileDropdownOpen ? 'rotate-180' : ''}`}
                   size={12}
-                />
-              </button>
+                /></button>
+              </div>
 
               {isMobileDropdownOpen && (
                 <>
@@ -320,7 +323,7 @@ const Navbar = () => {
                     onClick={toggleMenu}
                   >
                     <FaFlask className="text-blue-500" />
-                    <span>Sensory tests</span>
+                    <span>Trening umiejętności społecznych</span>
                   </Link>
                   <Link
                     to="/offer/cranial-therapy"
@@ -375,17 +378,19 @@ const Navbar = () => {
             </div>
 
             <div>
-              <button
-                onClick={() => setIsMobileGalleryOpen(!isMobileGalleryOpen)}
+              <div
                 className="w-full text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200"
               >
                 <FaImages className="text-blue-500" />
-                <span>Gallery</span>
+                <a href='gallery'>
+                <span>Galeria</span></a>
+                <button                 onClick={() => setIsMobileGalleryOpen(!isMobileGalleryOpen)}
+                >
                 <FaChevronDown
                   className={`transform transition-transform duration-200 ${isMobileGalleryOpen ? 'rotate-180' : ''}`}
                   size={12}
-                />
-              </button>
+                /></button>
+              </div>
 
               {isMobileGalleryOpen && (
                 <>

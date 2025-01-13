@@ -81,8 +81,9 @@ const Home = () => {
                 <span>Bank Millennium S.A. 82 1160 2202 0000 0003 8531 8733</span>
               </p>
             </Box>
-            <Link 
-              to="/contact#map-section" 
+            <Link
+              className="max-sm:order-first"
+              to="/contact#map-section"
               onClick={() => {
                 setTimeout(() => {
                   document.getElementById('map-section')?.scrollIntoView({ behavior: 'smooth' });

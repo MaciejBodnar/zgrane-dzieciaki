@@ -19,7 +19,7 @@ import Neuroflow from './pages/offer/Neuroflow';
 import Corrective from './pages/offer/Corrective';
 import HandTherapy from './pages/offer/HandTherapy';
 import SpeechTherapy from './pages/offer/SpeechTherapy';
-import Pricing from './pages/offer/Pricing'; 
+import Pricing from './pages/offer/Pricing';
 import Home from './pages/Home';
 
 function App() {

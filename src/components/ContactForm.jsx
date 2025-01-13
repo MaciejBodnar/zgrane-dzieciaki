@@ -5,27 +5,27 @@ const ContactForm = () => {
     name: '',
     email: '',
     phone: '',
-    message: ''
+    message: '',
   });
   const [phoneError, setPhoneError] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
-  const handlePhoneChange = (e) => {
+  const handlePhoneChange = e => {
     let value = e.target.value.replace(/[^\d]/g, ''); // Remove all non-digits
 
     // If the input is empty, set it to +48
     if (value.length === 0) {
       setFormData(prev => ({
         ...prev,
-        phone: '+48 '
+        phone: '+48 ',
       }));
       return;
     }
@@ -42,12 +42,13 @@ const ContactForm = () => {
     } else if (value.length <= 6) {
       formattedNumber = '+48 ' + value.slice(0, 3) + ' ' + value.slice(3);
     } else {
-      formattedNumber = '+48 ' + value.slice(0, 3) + ' ' + value.slice(3, 6) + ' ' + value.slice(6, 9);
+      formattedNumber =
+        '+48 ' + value.slice(0, 3) + ' ' + value.slice(3, 6) + ' ' + value.slice(6, 9);
     }
 
     setFormData(prev => ({
       ...prev,
-      phone: formattedNumber
+      phone: formattedNumber,
     }));
 
     // Validate the phone number
@@ -59,22 +60,24 @@ const ContactForm = () => {
     }
   };
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = e => {
     // Allow: backspace, delete, tab, escape, enter
-    if ([46, 8, 9, 27, 13].indexOf(e.keyCode) !== -1 ||
+    if (
+      [46, 8, 9, 27, 13].indexOf(e.keyCode) !== -1 ||
       // Allow: Ctrl+A, Command+A
       (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
       // Allow: home, end, left, right, down, up
-      (e.keyCode >= 35 && e.keyCode <= 40)) {
+      (e.keyCode >= 35 && e.keyCode <= 40)
+    ) {
       return;
     }
     // Ensure that it is a number and stop the keypress if not
-    if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+    if ((e.shiftKey || e.keyCode < 48 || e.keyCode > 57) && (e.keyCode < 96 || e.keyCode > 105)) {
       e.preventDefault();
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     // Add your form submission logic here
     console.log('Form submitted:', formData);
@@ -86,26 +89,22 @@ const ContactForm = () => {
       <div className="bg-white p-6 md:p-8 rounded-lg shadow-md">
         <div className="text-center py-8">
           <div className="mb-6">
-            <svg 
-              className="mx-auto h-16 w-16 text-green-500" 
-              fill="none" 
-              stroke="currentColor" 
+            <svg
+              className="mx-auto h-16 w-16 text-green-500"
+              fill="none"
+              stroke="currentColor"
               viewBox="0 0 24 24"
             >
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth={2} 
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
                 d="M5 13l4 4L19 7"
               />
             </svg>
           </div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Dziękujemy za wiadomość!
-          </h2>
-          <p className="text-gray-600 mb-8">
-            Odpowiemy najszybciej jak to możliwe.
-          </p>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Dziękujemy za wiadomość!</h2>
+          <p className="text-gray-600 mb-8">Odpowiemy najszybciej jak to możliwe.</p>
           <button
             onClick={() => {
               setIsSubmitted(false);
@@ -113,7 +112,7 @@ const ContactForm = () => {
                 name: '',
                 email: '',
                 phone: '',
-                message: ''
+                message: '',
               });
             }}
             className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors duration-300"
@@ -211,4 +210,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm; 
+export default ContactForm;

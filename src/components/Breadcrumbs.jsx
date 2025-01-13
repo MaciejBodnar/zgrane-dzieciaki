@@ -7,29 +7,29 @@ const Breadcrumbs = () => {
 
   // Create breadcrumb mapping
   const breadcrumbNameMap = {
-    offer: 'Offer',
-    study: 'Study',
-    sensory: 'Sensory Tests',
-    about: 'About',
-    standards: 'Standards',
-    gallery: 'Gallery',
+    offer: 'Oferta',
+    study: 'Integracja Sensoryczna',
+    sensory: 'Trening umiejętności społecznych',
+    about: 'O nas',
+    standards: 'Standardy ochrony małoletnich w Centrum Rozwoju Dziecka "Zgrane Dzieciaki"',
+    gallery: 'Galeria',
     office: 'Office',
     classes: 'Classes',
     therapy: 'Therapy',
     rodo: 'RODO',
-    'cranial-therapy': 'Cranial Therapy',
+    'cranial-therapy': 'Terapia Czaszkowo-Krzyżowa',
     neuroflow: 'Neuroflow',
-    corrective: 'Corrective',
-    'hand-therapy': 'Hand Therapy',
-    'speech-therapy': 'Speech Therapy',
-    pricing: 'Pricing',
-    contact: 'Contact',
+    corrective: 'Korektywa',
+    'hand-therapy': 'Terapia Ręki',
+    'speech-therapy': 'Logopedia',
+    pricing: 'Cennik',
+    contact: 'Kontakt',
   };
 
   return (
     <div className="bg-gray-100 py-2 px-4 rounded-md mb-6 flex items-center flex-wrap">
       <Link to="/" className="text-gray-600 hover:text-blue-500">
-        Home
+        Strona główna
       </Link>
 
       {pathnames.map((value, index) => {

@@ -17,7 +17,8 @@ const defaultIcon = new Icon({
   iconAnchor: [12, 41],
 });
 
-const Contact = () => {  // Coordinates for Ząbki, ul. Kościelna 9
+const Contact = () => {
+  // Coordinates for Ząbki, ul. Kościelna 9
   const position = [52.27831114831534, 21.12762613481187];
 
   return (
@@ -89,19 +90,18 @@ const Contact = () => {  // Coordinates for Ząbki, ul. Kościelna 9
           </div>
 
           <div className="text-gray-600 space-y-4">
-            <p>Znajdujemy się w centrum Ząbek, w bliskiej odległości od stacji PKP.</p>
-            <p>Dojazd samochodem: [instrukcje dojazdu]</p>
-            <p>Komunikacja miejska: [informacje o komunikacji]</p>
+            <p>Znajdujemy się w centrum Ząbek, w bliskiej odległości od stacji PKP Ząbki.</p>
+            <p>Dojazd samochodem: Najlepszy dojazd z Warszawy ulicą Józefa Piłsudskiego</p>
+            <p>Komunikacja miejska: Autobus 245 - nalezy wysiąść na przystanku Ząbki Dzika</p>
           </div>
         </div>
       </div>
 
-      {/* Contact Form */}
-      <ContactForm />
-
       {/* Map Section */}
       <div className="mt-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Nasza lokalizacja</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6" id="map-section">
+          Nasza lokalizacja
+        </h2>
         <div className="h-[400px] rounded-lg overflow-hidden shadow-lg z-0">
           <MapContainer
             center={position}

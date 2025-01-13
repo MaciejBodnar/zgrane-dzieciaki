@@ -49,7 +49,7 @@ const Study = () => {
           <img
             src={integracjaImage}
             alt="Integracja Sensoryczna"
-            className="w-full h-[300px] object-cover rounded-lg shadow-md"
+            className="w-full h-[300px] object-contain rounded-lg shadow-md"
           />
         </div>
 

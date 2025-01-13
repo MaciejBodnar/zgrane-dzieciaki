@@ -53,8 +53,7 @@ const Footer = () => {
                 className="text-gray-600 hover:text-blue-500 flex items-center"
                 onClick={scrollToTop}
               >
-                <FaInfoCircle className="mr-2 flex-shrink-0" />
-                O nas
+                <FaInfoCircle className="mr-2 flex-shrink-0" />O nas
               </Link>
               <Link
                 to="/rodo"
@@ -81,7 +80,10 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-200 text-center text-gray-600 text-sm sm:text-base">
-          <p>© {new Date().getFullYear()} Centrum Rozwoju Dziecka "Zgrane Dzieciaki". Wszelkie prawa zastrzeżone.</p>
+          <p>
+            © {new Date().getFullYear()} Centrum Rozwoju Dziecka "Zgrane Dzieciaki". Wszelkie prawa
+            zastrzeżone.
+          </p>
         </div>
       </div>
     </footer>
