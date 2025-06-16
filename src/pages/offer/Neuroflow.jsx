@@ -49,15 +49,24 @@ const Neuroflow = () => {
         {/* Introduction */}
         <div className="p-6 space-y-6">
           <p className="text-gray-700 leading-relaxed">
-            <strong>Pierwszy w Polsce interaktywny trening wyższych funkcji słuchowych</strong> dla dzieci z
-            zaburzeniami przetwarzania słuchowego (centralnymi zaburzeniami słuchu) oraz dzieci z
-            grupy ryzyka tych zaburzeń od 4 roku życia. Trening Neuroflow® prowadzony jest on-line
-            i jest dostępny na platformie internetowej. Dostęp do platformy można uzyskać po
+            <strong>Pierwszy w Polsce interaktywny trening wyższych funkcji słuchowych</strong> dla
+            dzieci z zaburzeniami przetwarzania słuchowego (centralnymi zaburzeniami słuchu) oraz
+            dzieci z grupy ryzyka tych zaburzeń od 4 roku życia. Trening Neuroflow® prowadzony jest
+            on-line i jest dostępny na platformie internetowej. Dostęp do platformy można uzyskać po
             przebyciu diagnozy w jednym z certyfikowanych ośrodków Neuroflow®.
           </p>
 
           <p className="text-gray-700 leading-relaxed">
-          Neuroflow® jest jednym z nielicznych treningów wyższych funkcji słuchowych opracowanym na podstawie najnowszych osiągnięć naukowych z tej dziedziny. Program ćwiczeń pozwala na dostosowanie ich tempa oraz stopnia trudności do potrzeb dziecka i możliwości rodziców – trening prowadzony może być w domu pacjenta, pod kontrolą rodzica lub w gabinecie terapeuty. Stopień trudności zadań dostosowywany jest do możliwości dziecka i zmienia się w sposób adaptacyjny, tak aby zadanie nie było zbyt łatwe, ani zbyt trudne. Trening słuchowy składa się z modułów, które odpowiadają potrzebom każdego z typów klinicznych zaburzeń przetwarzania słuchowego. Program jest dostosowany do kilku poziomów rozwojowych, od wieku przedszkolnego do młodzieży. Dostępny jest również trening słuchowy dla dorosłych.
+            Neuroflow® jest jednym z nielicznych treningów wyższych funkcji słuchowych opracowanym
+            na podstawie najnowszych osiągnięć naukowych z tej dziedziny. Program ćwiczeń pozwala na
+            dostosowanie ich tempa oraz stopnia trudności do potrzeb dziecka i możliwości rodziców –
+            trening prowadzony może być w domu pacjenta, pod kontrolą rodzica lub w gabinecie
+            terapeuty. Stopień trudności zadań dostosowywany jest do możliwości dziecka i zmienia
+            się w sposób adaptacyjny, tak aby zadanie nie było zbyt łatwe, ani zbyt trudne. Trening
+            słuchowy składa się z modułów, które odpowiadają potrzebom każdego z typów klinicznych
+            zaburzeń przetwarzania słuchowego. Program jest dostosowany do kilku poziomów
+            rozwojowych, od wieku przedszkolnego do młodzieży. Dostępny jest również trening
+            słuchowy dla dorosłych.
           </p>
         </div>
 
@@ -82,9 +91,13 @@ const Neuroflow = () => {
         <div className="p-6">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">Przebieg treningu</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-          Każdy etap treningu słuchowego poprzedzony jest diagnozą przeprowadzaną w certyfikowanym ośrodku Neuroflow®, na podstawie której przygotowywany jest indywidualny program ćwiczeń. Sesje treningowe odbywają się 3 razy w tygodniu, przy czym każda z nich trwa ok. 20-25 min. Trzy etapy ćwiczeń słuchowych trwają około 8 miesięcy. W dniach, kiedy dziecko nie wykonuje sesji słuchowych, realizuje ćwiczenia utrwalające schemat ciała, orientację w przestrzeni, ćwiczenia równoważne, koordynacji słuchowo-wzrokowo-ruchowej oraz ćwiczenia ruchowe połączone ze stymulacją wyższych funkcji słuchowych.
-
-
+            Każdy etap treningu słuchowego poprzedzony jest diagnozą przeprowadzaną w certyfikowanym
+            ośrodku Neuroflow®, na podstawie której przygotowywany jest indywidualny program
+            ćwiczeń. Sesje treningowe odbywają się 3 razy w tygodniu, przy czym każda z nich trwa
+            ok. 20-25 min. Trzy etapy ćwiczeń słuchowych trwają około 8 miesięcy. W dniach, kiedy
+            dziecko nie wykonuje sesji słuchowych, realizuje ćwiczenia utrwalające schemat ciała,
+            orientację w przestrzeni, ćwiczenia równoważne, koordynacji słuchowo-wzrokowo-ruchowej
+            oraz ćwiczenia ruchowe połączone ze stymulacją wyższych funkcji słuchowych.
           </p>
         </div>
 

@@ -64,10 +64,17 @@ const HandTherapy = () => {
             człowieka i jego samodzielność.
           </p>
           <p>
-          Ręka odpowiedzialna jest także za pisanie i kontrolę grafomotoryczną. Umiejętność pisania jest procesem złożonym, wymaga od dziecka ogólnej sprawności całego ciała oraz ręki, wykorzystania płynnej pracy oczu, prawidłowej koordynacji, koncentracji oraz łatwego odbioru informacji słuchowych. Dla wielu uczniów czynność ta jest trudna do opanowania, co w konsekwencji generuje różnego rodzaju trudności w nauce szkolnej.
+            Ręka odpowiedzialna jest także za pisanie i kontrolę grafomotoryczną. Umiejętność
+            pisania jest procesem złożonym, wymaga od dziecka ogólnej sprawności całego ciała oraz
+            ręki, wykorzystania płynnej pracy oczu, prawidłowej koordynacji, koncentracji oraz
+            łatwego odbioru informacji słuchowych. Dla wielu uczniów czynność ta jest trudna do
+            opanowania, co w konsekwencji generuje różnego rodzaju trudności w nauce szkolnej.
           </p>
           <p>
-            Symptomy opóźnienia lub zaburzenia rozwoju małej motoryki zauważalne są już we wczesnym dzieciństwie. Na początku objawiają się one głównie obniżoną sprawnością w zakresie dużej motoryki, trudnościami z opanowaniem czynności samoobsługowych, a następnie widoczne są w zakłóceniach czynności precyzyjnych, np. rysowaniu czy pisaniu.
+            Symptomy opóźnienia lub zaburzenia rozwoju małej motoryki zauważalne są już we wczesnym
+            dzieciństwie. Na początku objawiają się one głównie obniżoną sprawnością w zakresie
+            dużej motoryki, trudnościami z opanowaniem czynności samoobsługowych, a następnie
+            widoczne są w zakłóceniach czynności precyzyjnych, np. rysowaniu czy pisaniu.
           </p>
         </div>
 
