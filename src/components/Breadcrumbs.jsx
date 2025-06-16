@@ -7,23 +7,24 @@ const Breadcrumbs = () => {
 
   // Create breadcrumb mapping
   const breadcrumbNameMap = {
-    offer: 'Oferta',
-    study: 'Integracja Sensoryczna',
-    sensory: 'Trening umiejętności społecznych',
-    about: 'O nas',
-    standards: 'Standardy ochrony małoletnich w Centrum Rozwoju Dziecka "Zgrane Dzieciaki"',
-    gallery: 'Galeria',
-    office: 'Office',
-    classes: 'Classes',
-    therapy: 'Therapy',
+    oferta: 'Oferta',
+    'intergacja-sensoryczna': 'Integracja Sensoryczna',
+    'trening-umiejetnosci-spolecznych': 'Trening umiejętności społecznych',
+    'o-nas': 'O nas',
+    'standardy-ochrony-maloletnich':
+      'Standardy ochrony małoletnich w Centrum Rozwoju Dziecka "Zgrane Dzieciaki"',
+    // gallery: 'Galeria',
+    // office: 'Office',
+    // classes: 'Classes',
+    // therapy: 'Therapy',
     rodo: 'RODO',
-    'cranial-therapy': 'Terapia Czaszkowo-Krzyżowa',
-    neuroflow: 'Neuroflow',
-    corrective: 'Korektywa',
-    'hand-therapy': 'Terapia Ręki',
-    'speech-therapy': 'Logopedia',
-    pricing: 'Cennik',
-    contact: 'Kontakt',
+    'terapia-kregoslupa': 'Terapia Czaszkowo-Krzyżowa',
+    'trening-neuroflow': 'Neuroflow',
+    korektywa: 'Korektywa',
+    'terapia-dloni': 'Terapia Ręki',
+    logopedia: 'Logopedia',
+    cennik: 'Cennik',
+    kontakt: 'Kontakt',
   };
 
   return (

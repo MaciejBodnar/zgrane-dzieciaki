@@ -9,7 +9,6 @@ const Offer = () => {
     <div className="max-w-5xl mx-auto px-4 py-8">
       <Breadcrumbs />
 
-      {/* Hero Section */}
       <HeroBanner
         image={farbaImage}
         title="Oferta"
@@ -17,7 +16,6 @@ const Offer = () => {
         color={'bg-gradient-to-t from-pink-500/50 to-transparent border-2 border-pink-200'}
       />
 
-      {/* Announcement Box */}
       <Box className="mb-12 bg-gradient-to-r from-blue-500 to-blue-600 text-white transform hover:scale-[1.02] transition-transform">
         <div className="text-center space-y-4">
           <h2 className="text-2xl font-bold">
@@ -40,7 +38,6 @@ const Offer = () => {
         </div>
       </Box>
 
-      {/* Services Grid */}
       <div className="grid md:grid-cols-2 gap-6 mb-12">
         <Box className="bg-gradient-to-br from-green-50 to-blue-50 transform hover:scale-[1.02] transition-transform">
           <FaHandHoldingHeart className="text-4xl text-green-500 mb-4" />
@@ -64,7 +61,6 @@ const Offer = () => {
         </Box>
       </div>
 
-      {/* Main Content Box */}
       <Box className="mb-12 bg-gradient-to-br from-yellow-50 to-orange-50">
         <h2 className="text-2xl font-semibold text-gray-800 mb-6">
           Dlaczego warto skorzystać z naszej pomocy?
@@ -86,7 +82,6 @@ const Offer = () => {
         </div>
       </Box>
 
-      {/* Call to Action */}
       <div className="text-center bg-blue-50 p-8 rounded-xl transform hover:scale-[1.02] transition-transform">
         <a href="/offer/pricing">
           <h2 className="text-3xl font-bold text-blue-600 mb-4">

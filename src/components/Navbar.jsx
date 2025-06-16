@@ -87,7 +87,7 @@ const Navbar = () => {
 
             <div className="relative group">
               <Link
-                to="/about"
+                to="/o-nas"
                 className={`text-gray-600 hover:text-gray-900 transition-all duration-300 flex items-center gap-1 ${
                   isScrolled ? 'text-sm' : 'text-base'
                 }`}
@@ -102,7 +102,7 @@ const Navbar = () => {
               <div className="absolute rounded-md left-1/2 transform -translate-x-1/2 pt-1 hidden group-hover:block group-hover:rounded-md">
                 <div className="bg-white shadow-lg rounded-md w-48 border-t-2 border-blue-500">
                   <Link
-                    to="/about/standards"
+                    to="/o-nas/standardy-ochrony-maloletnich"
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaChild className="text-blue-500" />
@@ -114,7 +114,7 @@ const Navbar = () => {
 
             <div className="relative group">
               <Link
-                to="/offer"
+                to="/oferta"
                 className={`text-gray-600 hover:text-gray-900 transition-all duration-300 flex items-center gap-1 ${
                   isScrolled ? 'text-sm' : 'text-base'
                 }`}
@@ -129,56 +129,56 @@ const Navbar = () => {
               <div className="absolute rounded-md left-1/2 transform -translate-x-1/2 pt-1 hidden group-hover:block group-hover:rounded-md">
                 <div className="bg-white shadow-lg rounded-md w-48 border-t-2 border-blue-500">
                   <Link
-                    to="/offer/study"
+                    to="/oferta/intergacja-sensoryczna"
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaGraduationCap className="text-blue-500" />
                     <span>Integracja sensoryczna</span>
                   </Link>
                   <Link
-                    to="/offer/sensory"
+                    to="/oferta/trening-umiejetnosci-spolecznych"
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaFlask className="text-blue-500" />
                     <span className="w-fit">Trening umiejętności społecznych</span>
                   </Link>
                   <Link
-                    to="/offer/cranial-therapy"
+                    to="/oferta/terapia-kregoslupa"
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaHandHoldingMedical className="text-blue-500" />
                     <span>Terapia kręgosłupa</span>
                   </Link>
                   <Link
-                    to="/offer/neuroflow"
+                    to="/oferta/trening-neuroflow"
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaHeadphones className="text-blue-500" />
                     <span>Neuroflow</span>
                   </Link>
                   <Link
-                    to="/offer/corrective"
+                    to="/oferta/korektywa"
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaWalking className="text-blue-500" />
                     <span>Korektywa</span>
                   </Link>
                   <Link
-                    to="/offer/hand-therapy"
+                    to="/oferta/terapia-dloni"
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaHandPaper className="text-blue-500" />
                     <span>Terapia dłoni</span>
                   </Link>
                   <Link
-                    to="/offer/speech-therapy"
+                    to="/oferta/logopedia"
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaComments className="text-blue-500" />
-                    <span>Terapia mowy</span>
+                    <span>Logopedia</span>
                   </Link>
                   <Link
-                    to="/offer/pricing"
+                    to="/oferta/cennik"
                     className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
                   >
                     <FaMoneyBill className="text-blue-500" />
@@ -230,7 +230,7 @@ const Navbar = () => {
             </div> */}
 
             <Link
-              to="/contact"
+              to="/kontakt"
               className={`text-gray-600 hover:text-gray-900 transition-all duration-300 ${
                 isScrolled ? 'text-sm' : 'text-base'
               }`}
@@ -259,15 +259,15 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               <FaHome className="text-blue-500" />
-              <span>Home</span>
+              <span>Strona główna</span>
             </Link>
 
             {/* About Mobile Dropdown */}
             <div>
               <div className="w-full text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200">
                 <FaInfoCircle className="text-blue-500" />
-                <a href="/about">
-                  <span>About</span>
+                <a href="/o-nas">
+                  <span>O nas</span>
                 </a>
                 <button onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}>
                   <FaChevronDown
@@ -280,7 +280,7 @@ const Navbar = () => {
               {isMobileAboutOpen && (
                 <>
                   <Link
-                    to="/about/standards"
+                    to="/o-nas/standardy-ochrony-maloletnich"
                     className="text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200 bg-gray-50"
                     onClick={toggleMenu}
                   >
@@ -291,34 +291,33 @@ const Navbar = () => {
               )}
             </div>
 
-            {/* Offer Mobile Dropdown */}
+            {/* oferta Mobile Dropdown */}
             <div>
-              <div
-                className="w-full text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200"
-              >
+              <div className="w-full text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200">
                 <FaList className="text-blue-500" />
-                <a href='/offer'>
-                <span>Offer</span></a>
-                <button                 onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}
-                >
-                <FaChevronDown
-                  className={`transform transition-transform duration-200 ${isMobileDropdownOpen ? 'rotate-180' : ''}`}
-                  size={12}
-                /></button>
+                <a href="/oferta">
+                  <span>oferta</span>
+                </a>
+                <button onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}>
+                  <FaChevronDown
+                    className={`transform transition-transform duration-200 ${isMobileDropdownOpen ? 'rotate-180' : ''}`}
+                    size={12}
+                  />
+                </button>
               </div>
 
               {isMobileDropdownOpen && (
                 <>
                   <Link
-                    to="/offer/study"
+                    to="/oferta/intergacja-sensoryczna"
                     className="text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200 bg-gray-50"
                     onClick={toggleMenu}
                   >
                     <FaGraduationCap className="text-blue-500" />
-                    <span>Study</span>
+                    <span>Integracja Sensoryczna</span>
                   </Link>
                   <Link
-                    to="/offer/sensory"
+                    to="/oferta/trening-umiejetnosci-spolecznych"
                     className="text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200 bg-gray-50"
                     onClick={toggleMenu}
                   >
@@ -326,15 +325,15 @@ const Navbar = () => {
                     <span>Trening umiejętności społecznych</span>
                   </Link>
                   <Link
-                    to="/offer/cranial-therapy"
+                    to="/oferta/terapia-kregoslupa"
                     className="text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200 bg-gray-50"
                     onClick={toggleMenu}
                   >
                     <FaGraduationCap className="text-blue-500" />
-                    <span>Cranial Therapy</span>
+                    <span>Terapia kręgosłupa</span>
                   </Link>
                   <Link
-                    to="/offer/neuroflow"
+                    to="/oferta/trening-neuroflow"
                     className="text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200 bg-gray-50"
                     onClick={toggleMenu}
                   >
@@ -342,54 +341,53 @@ const Navbar = () => {
                     <span>Neuroflow</span>
                   </Link>
                   <Link
-                    to="/offer/corrective"
+                    to="/oferta/korektywa"
                     className="text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200 bg-gray-50"
                     onClick={toggleMenu}
                   >
                     <FaGraduationCap className="text-blue-500" />
-                    <span>Corrective</span>
+                    <span>Korektywa</span>
                   </Link>
                   <Link
-                    to="/offer/hand-therapy"
+                    to="/oferta/terapia-dloni"
                     className="text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200 bg-gray-50"
                     onClick={toggleMenu}
                   >
                     <FaFlask className="text-blue-500" />
-                    <span>Hand Therapy</span>
+                    <span>Terapia Dłoni</span>
                   </Link>
                   <Link
-                    to="/offer/speech-therapy"
+                    to="/oferta/logopedia"
                     className="text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200 bg-gray-50"
                     onClick={toggleMenu}
                   >
                     <FaGraduationCap className="text-blue-500" />
-                    <span>Speech Therapy</span>
+                    <span>Logopedia</span>
                   </Link>
                   <Link
-                    to="/offer/pricing"
+                    to="/oferta/cennik"
                     className="text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200 bg-gray-50"
                     onClick={toggleMenu}
                   >
                     <FaFlask className="text-blue-500" />
-                    <span>Pricing</span>
+                    <span>Cennik</span>
                   </Link>
                 </>
               )}
             </div>
 
-            <div>
-              <div
-                className="w-full text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200"
-              >
+            {/* <div>
+              <div className="w-full text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200">
                 <FaImages className="text-blue-500" />
-                <a href='gallery'>
-                <span>Galeria</span></a>
-                <button                 onClick={() => setIsMobileGalleryOpen(!isMobileGalleryOpen)}
-                >
-                <FaChevronDown
-                  className={`transform transition-transform duration-200 ${isMobileGalleryOpen ? 'rotate-180' : ''}`}
-                  size={12}
-                /></button>
+                <a href="gallery">
+                  <span>Galeria</span>
+                </a>
+                <button onClick={() => setIsMobileGalleryOpen(!isMobileGalleryOpen)}>
+                  <FaChevronDown
+                    className={`transform transition-transform duration-200 ${isMobileGalleryOpen ? 'rotate-180' : ''}`}
+                    size={12}
+                  />
+                </button>
               </div>
 
               {isMobileGalleryOpen && (
@@ -420,15 +418,15 @@ const Navbar = () => {
                   </Link>
                 </>
               )}
-            </div>
+            </div> */}
 
             <Link
-              to="/contact"
+              to="/kontakt"
               className="text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200"
               onClick={toggleMenu}
             >
               <FaEnvelope className="text-blue-500" />
-              <span>Contact</span>
+              <span>Kontakt</span>
             </Link>
             <Link
               to="/rodo"
