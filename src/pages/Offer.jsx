@@ -14,7 +14,7 @@ const Offer = () => {
         image={farbaImage}
         title="Oferta"
         subtitle="Profesjonalna pomoc dla Twojego dziecka"
-        color={'bg-gradient-to-t from-blue-700/80 to-transparent'}
+        color={'bg-gradient-to-t from-pink-500/50 to-transparent border-2 border-pink-200'}
       />
 
       {/* Announcement Box */}
