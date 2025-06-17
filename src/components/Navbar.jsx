@@ -239,7 +239,7 @@ const Navbar = () => {
               <div>
                 <div className="w-full text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200">
                   <FaInfoCircle className="text-blue-500" />
-                  <Link href="/o-nas">
+                  <Link to="/o-nas">
                     <span>O nas</span>
                   </Link>
                   <button onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}>
@@ -268,7 +268,7 @@ const Navbar = () => {
               <div>
                 <div className="w-full text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200">
                   <FaList className="text-blue-500" />
-                  <Link href="/oferta">
+                  <Link to="/oferta">
                     <span>Oferta</span>
                   </Link>
                   <button onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}>
