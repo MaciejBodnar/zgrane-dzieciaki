@@ -106,24 +106,17 @@ const Navbar = () => {
                   />
                 </NavLink>
                 {/* Dropdown O nas */}
-                <div className="absolute hidden group-hover:block flex-col items-center justify-center min-w-[300px] mt-12 rounded-2xl bg-blue-200">
-                  <Submenu />
-                  <Submenu />
-
-                  {/* <div className="bg-white shadow-lg rounded-md w-48 border-t-2 border-blue-500">
-                  <NavLink
-                    to="/o-nas/standardy-ochrony-maloletnich"
-                    className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
-                  >
-                    <FaChild className="text-blue-500" />
-                    <span>Standardy ochrony małoletnich</span>
-                  </NavLink>
-                </div> */}
+                <div className="absolute hidden group-hover:block flex-col items-center justify-center min-w-[300px] mt-6 rounded-2xl bg-blue-200">
+                  <Submenu
+                    link="/o-nas/standardy-ochrony-maloletnich"
+                    label="Standardy ochrony małoletnich"
+                    children={<FaChild className="text-blue-500" />}
+                  />
                 </div>
               </div>
 
               <div
-                className="relative group"
+                className="relative group flex flex-col items-center"
                 onMouseEnter={() => setIsAnyDropdownOpen(true)}
                 onMouseLeave={() => setIsAnyDropdownOpen(false)}
               >
@@ -134,68 +127,48 @@ const Navbar = () => {
                     size={12}
                   />
                 </NavLink>
-
-                {/* Dropdown Offerta */}
-                {/* <div className="absolute rounded-md left-1/2 transform -translate-x-1/2 pt-1 hidden group-hover:block group-hover:rounded-md">
-                <div className="bg-white shadow-lg rounded-md w-48 border-t-2 border-blue-500">
-                  <NavLink
-                    to="/oferta/intergacja-sensoryczna"
-                    className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
-                  >
-                    <FaGraduationCap className="text-blue-500" />
-                    <span>Integracja sensoryczna</span>
-                  </NavLink>
-                  <NavLink
-                    to="/oferta/trening-umiejetnosci-spolecznych"
-                    className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
-                  >
-                    <FaFlask className="text-blue-500" />
-                    <span className="w-fit">Trening umiejętności społecznych</span>
-                  </NavLink>
-                  <NavLink
-                    to="/oferta/terapia-kregoslupa"
-                    className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
-                  >
-                    <FaHandHoldingMedical className="text-blue-500" />
-                    <span>Terapia kręgosłupa</span>
-                  </NavLink>
-                  <NavLink
-                    to="/oferta/trening-neuroflow"
-                    className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
-                  >
-                    <FaHeadphones className="text-blue-500" />
-                    <span>Neuroflow</span>
-                  </NavLink>
-                  <NavLink
-                    to="/oferta/korektywa"
-                    className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
-                  >
-                    <FaWalking className="text-blue-500" />
-                    <span>Korektywa</span>
-                  </NavLink>
-                  <NavLink
-                    to="/oferta/terapia-dloni"
-                    className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
-                  >
-                    <FaHandPaper className="text-blue-500" />
-                    <span>Terapia dłoni</span>
-                  </NavLink>
-                  <NavLink
-                    to="/oferta/logopedia"
-                    className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
-                  >
-                    <FaComments className="text-blue-500" />
-                    <span>Logopedia</span>
-                  </NavLink>
-                  <NavLink
-                    to="/oferta/cennik"
-                    className="flex p-4 text-gray-600 hover:text-gray-900 hover:bg-gray-50 text-center items-center justify-center gap-2"
-                  >
-                    <FaMoneyBill className="text-blue-500" />
-                    <span>Cennik</span>
-                  </NavLink>
+                <div className="absolute hidden group-hover:block flex-col items-center justify-center min-w-[300px] mt-6 rounded-2xl bg-blue-200">
+                  <Submenu
+                    link="/oferta/intergacja-sensoryczna"
+                    label="Integracja sensoryczn"
+                    children={<FaGraduationCap className="text-blue-500" />}
+                  />
+                  <Submenu
+                    link="/oferta/trening-umiejetnosci-spolecznych"
+                    label="Trening umiejętności społecznych"
+                    children={<FaFlask className="text-blue-500" />}
+                  />
+                  <Submenu
+                    link="/oferta/terapia-kregoslupa"
+                    label="Terapia kręgosłupa"
+                    children={<FaHandHoldingMedical className="text-blue-500" />}
+                  />
+                  <Submenu
+                    link="/oferta/trening-neuroflow"
+                    label="Neuroflow"
+                    children={<FaHeadphones className="text-blue-500" />}
+                  />
+                  <Submenu
+                    link="/oferta/korektywa"
+                    label="Korektywa"
+                    children={<FaWalking className="text-blue-500" />}
+                  />
+                  <Submenu
+                    link="/oferta/terapia-dloni"
+                    label="Terapia dłoni"
+                    children={<FaHandPaper className="text-blue-500" />}
+                  />
+                  <Submenu
+                    link="/oferta/logopedia"
+                    label="Logopedia"
+                    children={<FaComments className="text-blue-500" />}
+                  />
+                  <Submenu
+                    link="/oferta/cennik"
+                    label="Cennik"
+                    children={<FaMoneyBill className="text-blue-500" />}
+                  />
                 </div>
-              </div> */}
               </div>
 
               {/* <div className="relative group">
@@ -266,9 +239,9 @@ const Navbar = () => {
               <div>
                 <div className="w-full text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200">
                   <FaInfoCircle className="text-blue-500" />
-                  <a href="/o-nas">
+                  <Link href="/o-nas">
                     <span>O nas</span>
-                  </a>
+                  </Link>
                   <button onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}>
                     <FaChevronDown
                       className={`transform transition-transform duration-200 ${isMobileAboutOpen ? 'rotate-180' : ''}`}
@@ -295,9 +268,9 @@ const Navbar = () => {
               <div>
                 <div className="w-full text-gray-600 hover:text-gray-900 py-3 flex items-center justify-center space-x-2 border-b border-gray-200">
                   <FaList className="text-blue-500" />
-                  <a href="/oferta">
-                    <span>oferta</span>
-                  </a>
+                  <Link href="/oferta">
+                    <span>Oferta</span>
+                  </Link>
                   <button onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}>
                     <FaChevronDown
                       className={`transform transition-transform duration-200 ${isMobileDropdownOpen ? 'rotate-180' : ''}`}
