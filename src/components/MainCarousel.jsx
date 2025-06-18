@@ -7,6 +7,7 @@ import headPhones from '../assets/Słuchawki.jpg';
 import tus from '../assets/Tus.png';
 import logopeda from '../assets/Logopeda.png';
 import korektywa from '../assets/Korektywa.png';
+import { Link } from 'react-router-dom';
 
 const NextArrow = ({ onClick }) => (
   <button
@@ -47,7 +48,7 @@ const MainCarousel = () => {
         'Profesjonalna terapia integracji sensorycznej, która pomoże Twojemu dziecku w rozwoju.',
       image: logo,
       buttonText: 'Dowiedz się więcej',
-      buttonLink: '/offer/sensory',
+      buttonLink: '/oferta/intergacja-sensoryczna',
       color: 'from-blue-600 to-indigo-600',
       buttonStyle: 'bg-indigo-600 hover:bg-indigo-700 text-white',
     },
@@ -56,7 +57,7 @@ const MainCarousel = () => {
       description: 'Specjalistyczna terapia słuchowa wspierająca rozwój Twojego dziecka.',
       image: headPhones,
       buttonText: 'Poznaj szczegóły',
-      buttonLink: '/about',
+      buttonLink: '/oferta/trening-neuroflow',
       color: 'from-purple-600 to-pink-600',
       buttonStyle: 'border-2 border-purple-600 text-purple-600 hover:bg-purple-50',
     },
@@ -65,7 +66,7 @@ const MainCarousel = () => {
       description: 'Kompleksowy program rozwijający umiejętności społeczne.',
       image: tus,
       buttonText: 'Zobacz program',
-      buttonLink: '/offer',
+      buttonLink: '/oferta/trening-umiejetnosci-spolecznych',
       color: 'from-green-600 to-teal-600',
       buttonStyle: 'bg-teal-600 hover:bg-teal-700 text-white',
     },
@@ -73,8 +74,8 @@ const MainCarousel = () => {
       title: 'Terapia Logopedyczna',
       description: 'Profesjonalna pomoc logopedyczna dla dzieci w każdym wieku.',
       image: logopeda,
-      buttonText: 'Umów wizytę',
-      buttonLink: '/offer',
+      buttonText: 'Dowiedz się więcej',
+      buttonLink: '/oferta/logopedia',
       color: 'from-orange-600 to-red-600',
       buttonStyle: 'border-2 border-orange-600 text-orange-600 hover:bg-orange-50',
     },
@@ -82,8 +83,8 @@ const MainCarousel = () => {
       title: 'Gimnastyka Korekcyjna',
       description: 'Zajęcia korekcyjne prowadzone przez doświadczonych specjalistów.',
       image: korektywa,
-      buttonText: 'Zapisz się',
-      buttonLink: '/offer',
+      buttonText: 'Zobacz więcej',
+      buttonLink: '/oferta/korektywa',
       color: 'from-cyan-600 to-blue-600',
       buttonStyle: 'bg-blue-600 hover:bg-blue-700 text-white',
     },
@@ -94,7 +95,7 @@ const MainCarousel = () => {
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div key={index} className="relative overflow-hidden">
-            <a href={slide.buttonLink} className="block">
+            <Link to={slide.buttonLink} className="block">
               <div className="flex flex-col md:grid md:grid-cols-2 min-h-[600px] gap-0 group cursor-pointer">
                 {/* Image Section */}
                 <div className="relative h-[300px] md:h-full order-1 md:order-2 overflow-hidden">
@@ -135,7 +136,7 @@ const MainCarousel = () => {
                     <p className="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed">
                       {slide.description}
                     </p>
-                    <div onClick={e => e.preventDefault()} className="relative inline-block">
+                    <div className="relative inline-block">
                       <button
                         className={`${slide.buttonStyle} px-8 py-4 rounded-lg transition-all duration-300 transform group-hover:scale-105 group-hover:shadow-lg text-lg font-semibold`}
                       >
@@ -145,7 +146,7 @@ const MainCarousel = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           </div>
         ))}
       </Slider>

@@ -83,7 +83,7 @@ const Offer = () => {
       </Box>
 
       <div className="text-center bg-blue-50 p-8 rounded-xl transform hover:scale-[1.02] transition-transform">
-        <a href="/offer/pricing">
+        <a href="/oferta/cennik">
           <h2 className="text-3xl font-bold text-blue-600 mb-4">
             Zapraszamy do zapoznania się z naszą ofertą!
           </h2>

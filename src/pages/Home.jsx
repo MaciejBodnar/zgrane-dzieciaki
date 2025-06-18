@@ -13,7 +13,7 @@ const Home = () => {
           <Box
             backgroundColor="bg-green-50"
             className="cursor-pointer h-full border-green-200 hover:bg-green-100"
-            url="/about"
+            url="/o-nas"
           >
             <h2 className="text-2xl font-semibold mb-2">O nas</h2>
             <p className="text-gray-600">
@@ -26,14 +26,14 @@ const Home = () => {
             padding="p-6"
             backgroundColor="bg-blue-50"
             className="border border-blue-200 h-full hover:bg-blue-100"
-            url="/offer"
+            url="/oferta"
           >
             <h2 className="text-2xl font-semibold mb-2">Oferta</h2>
             <p className="text-gray-600 flex flex-col gap-4">
               <span>
                 <strong>
                   UWAGA!! OBECNIE PROWADZIMY NABÓR NA ZAJĘCIA TUS (TRENING UMIEJĘTNOŚCI SPOŁECZNYCH)
-                  <br />{' '}
+                  <br />
                 </strong>
               </span>
 
@@ -65,7 +65,7 @@ const Home = () => {
               padding="p-6"
               backgroundColor="bg-yellow-50"
               className="border border-yellow-200 h-full hover:bg-yellow-100 w-full"
-              url="/contact"
+              url="/kontakt"
             >
               <h2 className="text-2xl font-semibold mb-2">
                 Centrum Rozwoju Dziecka „Zgrane Dzieciaki” w Ząbkach
@@ -83,7 +83,7 @@ const Home = () => {
             </Box>
             <Link
               className="max-sm:order-first"
-              to="/contact#map-section"
+              to="/kontakt#map-section"
               onClick={() => {
                 setTimeout(() => {
                   document.getElementById('map-section')?.scrollIntoView({ behavior: 'smooth' });
